@@ -52,11 +52,7 @@ Effekt av vannregulering og broer.
 
 Innsjøer kan også inkluderes.
 
-Infiltrasjonsverdier med løsmassekart.
-
-+ Skogområder
-
-+ Jordbruk
+Infiltrasjonsverdier med jordbruksdata.
 
 Forbedring av vannstandstignings-beregninger.
 
@@ -77,66 +73,4 @@ Lokale klimaer/regimer: Snø / Bre o.s.v.
 # Hensyn til lagringsplass
 Flere av filene i scripten trenger opp til 1GB lagringsplass per .tif fil. Videre, trenger "raw-dtm" mellom 10 - flere hundre GB lagringsplass for å laste ned i 1m oppløsning.
 Ta hensyn på lagringsplassen deres, og jobbe med bare ETT vassdrag per brukssak.
-
-# Det finnes flere filsti i denne scripten. De er som følges:
-Raw 1m DTM filer:       
->RAW_PATH: "../RAW/"
-                        
->RAW_DTM: f"{RAW_path}VD_{vassdrag_basin_name}_DTM.tif"
-                    
-Skalert DTM filer:      
->RS_PATH: "../OUT/"
-                        
->RS_DTM: f"{RS_DIR}VD_{vassdrag_basin_name}_R{int(target_res)}m.tif"
-
-Brennt DTM filer:       
->BN_PATH: "../BURNED/"
-                        
->BN_DTM: f"{BN_PATH}VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
-
-Elvnett mask:           
->RNET_PATH: "../RNET/"
-                        
->RNET_FIL: f"{RNET_PATH}VD{vassdrag_basin_name}_RB{burn_depth}_INV_R{int(target_res)}m.tif"
-
-Fikset brennt DTM:      
->BN_FIX: f"{BN_PATH}VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_R{int(target_res)}m.tif"
-                        
->BN_FIX_RND = f"{FACC_path}VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_RD_R{int(target_res)}m.tif"
-                  
-Flow accumulation:      
->FACC_PATH: "../FLOWACC/"
-
->FACC_FIL: f"{FACC_PATH}FAC_VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_RD_R{int(target_res)}m.tif"
-
-Strahler Stream Order:
->STRAHLER_PATH = "../ELV/"
-
->STRAHLER_FIL = f"{STRAHLER_PATH}SORD_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
-
-Strømretning
->FDIR_PATH = "../FDIR"
-
->FDIR_FIL = f"{FDIR_PATH}FDIR_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
-
-Flom-output (ENKELT)
->FLD_PATH = "../FLD"
-
->FLD_FIL_ELVIS = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_ELVIS.tif"
-
->FLD_FIL_STREAMS = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_STREAMS.tif"
-
->FLD_FIL_ELVIS_VEC = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_ELVIS.gpkg"
-
->FLD_FIL_STREAMS_VEC = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_STREAMS.gpkg"
-
-Flom-output (VANLIG)
-> AKT_FIL_DTM = f"{FLD_PATH}AKT_DTM_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
-
-> AKT_FIL_ELVIS = f"{FLD_PATH}AKT_ELVIS_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
-
->  AKT_FIL_DTM_VEC = f"{FLD_PATH}AKT_DTM_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
-
-> AKT_FIL_ELVIS_VEC = f"{FLD_PATH}AKT_ELVIS_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
-
 
