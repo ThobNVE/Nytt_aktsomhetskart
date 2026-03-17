@@ -11,6 +11,7 @@ Før du begynne å bruke, må du:
 Det er krav for å ha spesifikk mappesystem for det å fungere.
 Mappesystem er som følges:
 
+#
 For building of the base model to the Norwegian water and energy directorate's new susceptibility map for flooding.
 The script is iterated on the test area 122, in the Trondheim region of Norway.
 
@@ -49,9 +50,9 @@ The system is as follows:
 
 # Senere kan scriptene bransje ut med utvikling av bedre metodikk.
 
-# Neste steg med grunn-scripten:
+## Neste steg med grunn-scripten:
 
-# Må gjøres: 
+### Må gjøres: 
 
 Test av ProbHAND metoden.
 
@@ -59,7 +60,7 @@ Test av høyere oppløsningsdata (e.g. 5m, for 1m er litt komplisert).
 
 En løsning for problemer som kommer fra små sideelv/NBF
 
-# Kan testes:
+## Kan testes:
 
 Effekt av vannregulering og broer.
 
