@@ -2,24 +2,27 @@
 For oppbygging av grunnmodellen til NVEs nytt aktsomhetskart for flom.
 Scripten ble testet i vassdrag nr. 122, "Gaula", Trondheims-region.
 
-For building of the base model to the Norwegian water and energy directorate's new susceptibility map for flooding.
-The script is iterated on the test area 122, in the Trondheim region of Norway.
 
 Før du begynne å bruke, må du:
 1. Oppsett et Anaconda-python system med Python_GIS.yml (i /envs/)
 2. Aktivere Python_GIS miljøet (i powershell hvis du bruker jupyter, eller i VS Studio/ annet Python programvare)
 3. Åpne hovedscripten "Nytt_aktsomhetskart{versjon}.ipynb" i /Scripts/ med VSCode, jupyter eller lignende programvare.
 
+Det er krav for å ha spesifikk mappesystem for det å fungere.
+Mappesystem er som følges:
+
+For building of the base model to the Norwegian water and energy directorate's new susceptibility map for flooding.
+The script is iterated on the test area 122, in the Trondheim region of Norway.
+
 Before you start using this script, you must:
 1. Set up your anaconda environment using Python_GIS.yml (in the /envs/ directory).
 2. Activate the environment. In powershell you should also start jupyter, but this is also run-able in VS Studio and other python software.
 3. Open the main script "Nytt_aktsomhetskart{version}.ipynb" in /Scripts/ with your code editor of choice.
 
-Det er krav for å ha spesifikk mappesystem for det å fungere.
-Mappesystem er som følges:
-
 You must have this specific file system for the script to function.
 The system is as follows:
+
+#
 >/HOVED MAPPE/
 
 >            > /BURNED/       # For DTM innbrent med elvdata som .tif filer
