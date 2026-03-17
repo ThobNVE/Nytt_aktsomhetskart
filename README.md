@@ -15,7 +15,7 @@ Ta hensyn på lagringsplassen deres, og jobbe med bare ETT vassdrag per brukssak
 Det er krav for å ha spesifikk mappesystem for det å fungere.
 Mappesystem er som følges:
 
-#
+# New flood susceptibility map
 For building of the base model to the Norwegian water and energy directorate's new susceptibility map for flooding.
 The script is iterated on the test area 122, in the Trondheim region of Norway.
 
