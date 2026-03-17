@@ -28,34 +28,16 @@ Before you start using this script, you must:
 2. Activate the environment. In powershell you should also start jupyter, but this is also run-able in VS Studio and other python software.
 3. Open the main script "Nytt_aktsomhetskart{version}.ipynb" in /Scripts/ with your code editor of choice.
 
-## Filesystem
-You must have this specific file system for the script to function.
-The system is as follows:
+## Contents
 
-#
->/HOVED MAPPE/
+[ReadMe](https://github.com/ThobNVE/Nytt_aktsomhetskart)
 
->            > /BURNED/       # For DTM innbrent med elvdata som .tif filer
+[User Guide](https://github.com/ThobNVE/Nytt_aktsomhetskart/blob/main/User%20Guide.md)
 
->            > /ELV/          # For Elvenettdata produsert av DTM.
 
->            > /FLD/          # Flomområder
 
->            > /RNET/         # Invertert elvenettverk for innbrenning og geometri endring
 
->            > /FLOWACC/      # For Flow Accumulation .tif filer
 
->            > /OUT/          # For DTM som er skalert til et valgt oppløsning
-
->            > /RAW/          # For raw 1 m DTM data lastet ned fra geonorge
-
->            > /FDIR/         # For strømretning data 
-
->            > /Scripts/      # For scriptene, både .ipynb og .py
-
->            > /Skalering/    # For test-scripts for skaleringsmetodikk (ikke nødvendig hvis skalerings-script eksisterer i /Scritps)
-
->            > /envs/         # For Python miljø .yml (ikke nødvendig)
 
 # Senere kan scriptene bransje ut med utvikling av bedre metodikk.
 
