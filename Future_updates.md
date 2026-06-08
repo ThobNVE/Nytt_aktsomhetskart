@@ -17,11 +17,17 @@
           - Machine learning calculations instead?
 
 - 2 - Testing alternative HAND and hydrological/morphological toolboxes to work with:
+
               - Pysheds
+
               - Topotoolbox
+  
               - HydromodPy
+  
               - Lymperis-e/GWAT
+  
               - CoMMa
+  
  - 3 - Backflow tests and alternatives.
 
  - 4 - Kritiskepunkter i høyoppløsningsdata.
