@@ -2,7 +2,9 @@
 
 The new aktsomhetskart python environment is built using uv, replacing the old anaconda environment.
 This is generally functional, but requires a few extra steps to set up, particularly in relation to gdal as it is not a native pip package.
-As such, if you have the access, use anaconda (despite it being slower), otherwise, uv is a fast and effective solution as documented here.
+As such, if you have the access, use anaconda (despite it being slower), otherwise, uv is a fast and effective solution as documented here. 
+You can find the right version of the gdal wheel file here: https://github.com/cgohlke/geospatial-wheels/releases. For the current setup you need:
+gdal-3.12.2-cp313-cp313-win_amd64.whl
 
 1) Ensure that you have:
 
