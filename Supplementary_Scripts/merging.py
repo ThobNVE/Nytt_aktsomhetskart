@@ -18,3 +18,8 @@ out_meta.update({
 })
 for s in srcs:
     s.close()
+
+out_path = os.path.join(FOLDER, "merged_sylte.tif")
+with rasterio.open(out_path, "w", **out_meta) as dst:
+    dst.write(mosaic)
+print(f"Merged raster saved to {out_path}")
